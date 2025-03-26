@@ -68,6 +68,8 @@
             overflow: hidden;
             box-shadow: var(--card-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
         
         .game-card:hover {
@@ -102,6 +104,9 @@
         
         .game-content {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
         
         h2 {
@@ -113,6 +118,11 @@
         .game-description {
             margin-bottom: 1.5rem;
             color: #666;
+            flex-grow: 1;
+        }
+        
+        .button-container {
+            margin-top: auto;
         }
         
         .play-button {
@@ -191,7 +201,9 @@
                 <div class="game-content">
                     <h2>Monster Survivors</h2>
                     <p class="game-description">Fight waves of monsters in this thrilling survival game. Collect power-ups, upgrade your character, and survive as long as possible!</p>
-                    <a href="monster-survivors.html" class="play-button">Play Now</a>
+                    <div class="button-container">
+                        <a href="monster-survivors.html" class="play-button">Play Now</a>
+                    </div>
                 </div>
             </div>
             
@@ -202,7 +214,9 @@
                 <div class="game-content">
                     <h2>Survivors Classic</h2>
                     <p class="game-description">Experience the original survival challenge that started it all. Navigate through dangerous environments and outlast your opponents.</p>
-                    <a href="survivors-classic.html" class="play-button">Play Now</a>
+                    <div class="button-container">
+                        <a href="survivors-classic.html" class="play-button">Play Now</a>
+                    </div>
                 </div>
             </div>
             
@@ -213,7 +227,9 @@
                 <div class="game-content">
                     <h2>Poki Survivors</h2>
                     <p class="game-description">A fast-paced survival adventure with unique gameplay mechanics. Test your skills and reflexes in this action-packed game!</p>
-                    <a href="poki-survivors.html" class="play-button">Play Now</a>
+                    <div class="button-container">
+                        <a href="poki-survivors.html" class="play-button">Play Now</a>
+                    </div>
                 </div>
             </div>
         </div>
